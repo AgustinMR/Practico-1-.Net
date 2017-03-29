@@ -3,3 +3,4 @@ C:\Users\Agustin\Documents\PracticoTSI1\CrossCutting\bin\Debug\Shared.pdb
 C:\Users\Agustin\Documents\PracticoTSI1\CrossCutting\obj\Debug\Shared.csprojResolveAssemblyReference.cache
 C:\Users\Agustin\Documents\PracticoTSI1\CrossCutting\obj\Debug\Shared.dll
 C:\Users\Agustin\Documents\PracticoTSI1\CrossCutting\obj\Debug\Shared.pdb
+C:\Users\Agustin\Documents\PracticoTSI1\CrossCutting\bin\Debug\Shared.dll.config

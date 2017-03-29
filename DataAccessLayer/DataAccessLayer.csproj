@@ -53,20 +53,29 @@
     <Compile Include="DALEmployeesNativeSQL.cs" />
     <Compile Include="DALEmployeesMock.cs" />
     <Compile Include="IDALEmployees.cs" />
-    <Compile Include="Model\Employee.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Employee.Context.tt</DependentUpon>
-    </Compile>
     <Compile Include="Model\Employee.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Employee.tt</DependentUpon>
+      <DependentUpon>EmployeesADOModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Model\Employee.Designer.cs">
+    <Compile Include="Model\EmployeesADOModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Employee.edmx</DependentUpon>
+      <DependentUpon>EmployeesADOModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\EmployeesADOModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeesADOModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\EmployeesADOModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeesADOModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Model\FullTimeEmployee.cs">
+      <DependentUpon>EmployeesADOModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\PartTimeEmployee.cs">
+      <DependentUpon>EmployeesADOModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -78,29 +87,29 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.Config" />
-    <EntityDeploy Include="Model\Employee.edmx">
+    <EntityDeploy Include="Model\EmployeesADOModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Employee.Designer.cs</LastGenOutput>
+      <LastGenOutput>EmployeesADOModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="Model\Employee.edmx.diagram">
-      <DependentUpon>Employee.edmx</DependentUpon>
-      <SubType>Designer</SubType>
+    <None Include="Model\EmployeesADOModel.edmx.diagram">
+      <DependentUpon>EmployeesADOModel.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Content Include="Model\Employee.Context.tt">
+    <Content Include="Model\EmployeesADOModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Employee.edmx</DependentUpon>
-      <LastGenOutput>Employee.Context.cs</LastGenOutput>
+      <DependentUpon>EmployeesADOModel.edmx</DependentUpon>
+      <LastGenOutput>EmployeesADOModel.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Model\Employee.tt">
+    <Content Include="Model\EmployeesADOModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Employee.edmx</DependentUpon>
-      <LastGenOutput>Employee.cs</LastGenOutput>
+      <DependentUpon>EmployeesADOModel.edmx</DependentUpon>
+      <LastGenOutput>EmployeesADOModel.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

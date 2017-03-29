@@ -1,0 +1,17 @@
+C:\Users\Agustin\Documents\PracticoTSI1\Test\bin\Debug\Test.dll
+C:\Users\Agustin\Documents\PracticoTSI1\Test\bin\Debug\Test.pdb
+C:\Users\Agustin\Documents\PracticoTSI1\Test\bin\Debug\BusinessLogicLayer.dll
+C:\Users\Agustin\Documents\PracticoTSI1\Test\bin\Debug\DataAccessLayer.dll
+C:\Users\Agustin\Documents\PracticoTSI1\Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Agustin\Documents\PracticoTSI1\Test\bin\Debug\Shared.dll
+C:\Users\Agustin\Documents\PracticoTSI1\Test\bin\Debug\BusinessLogicLayer.pdb
+C:\Users\Agustin\Documents\PracticoTSI1\Test\bin\Debug\Shared.pdb
+C:\Users\Agustin\Documents\PracticoTSI1\Test\bin\Debug\Shared.dll.config
+C:\Users\Agustin\Documents\PracticoTSI1\Test\bin\Debug\DataAccessLayer.pdb
+C:\Users\Agustin\Documents\PracticoTSI1\Test\bin\Debug\DataAccessLayer.dll.config
+C:\Users\Agustin\Documents\PracticoTSI1\Test\bin\Debug\es\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+C:\Users\Agustin\Documents\PracticoTSI1\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
+C:\Users\Agustin\Documents\PracticoTSI1\Test\obj\Debug\Test.dll
+C:\Users\Agustin\Documents\PracticoTSI1\Test\obj\Debug\Test.pdb
+C:\Users\Agustin\Documents\PracticoTSI1\Test\bin\Debug\EntityFramework.dll
+C:\Users\Agustin\Documents\PracticoTSI1\Test\bin\Debug\EntityFramework.xml
