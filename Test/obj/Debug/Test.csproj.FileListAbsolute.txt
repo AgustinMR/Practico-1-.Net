@@ -15,3 +15,5 @@ C:\Users\Agustin\Documents\PracticoTSI1\Test\obj\Debug\Test.dll
 C:\Users\Agustin\Documents\PracticoTSI1\Test\obj\Debug\Test.pdb
 C:\Users\Agustin\Documents\PracticoTSI1\Test\bin\Debug\EntityFramework.dll
 C:\Users\Agustin\Documents\PracticoTSI1\Test\bin\Debug\EntityFramework.xml
+C:\Users\Agustin\Documents\PracticoTSI1\Test\bin\Debug\Test.dll.config
+C:\Users\Agustin\Documents\PracticoTSI1\Test\bin\Debug\BusinessLogicLayer.dll.config

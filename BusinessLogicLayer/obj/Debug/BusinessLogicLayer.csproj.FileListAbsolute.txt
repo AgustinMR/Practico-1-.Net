@@ -11,3 +11,4 @@ C:\Users\Agustin\Documents\PracticoTSI1\BusinessLogicLayer\obj\Debug\BusinessLog
 C:\Users\Agustin\Documents\PracticoTSI1\BusinessLogicLayer\bin\Debug\Shared.dll.config
 C:\Users\Agustin\Documents\PracticoTSI1\BusinessLogicLayer\bin\Debug\EntityFramework.dll
 C:\Users\Agustin\Documents\PracticoTSI1\BusinessLogicLayer\bin\Debug\EntityFramework.xml
+C:\Users\Agustin\Documents\PracticoTSI1\BusinessLogicLayer\bin\Debug\BusinessLogicLayer.dll.config

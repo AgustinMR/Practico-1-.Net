@@ -4,14 +4,26 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.Entity;
+using System.Data.Entity.Infrastructure;
 
 namespace DataAccessLayer
 {
-    public class DALEmployeesEF : IDALEmployees
-    {
+
+    public class EmployeeDbContext : DbContext {
+        public EmployeeDbContext() : base("name=EmployeesConnectionString") { }
+        public DbSet<Employee> Employees { get; set; }
+    }
+
+    public class DALEmployeesEF : IDALEmployees {
+
         public void AddEmployee(Employee emp)
         {
-            throw new NotImplementedException();
+            if (emp != null) {
+                EmployeeDbContext context = new EmployeeDbContext();
+                context.Employees.Add(emp);
+                context.SaveChanges();
+            }
         }
 
         public void DeleteEmployee(int id)
@@ -34,4 +46,5 @@ namespace DataAccessLayer
             throw new NotImplementedException();
         }
     }
+
 }
