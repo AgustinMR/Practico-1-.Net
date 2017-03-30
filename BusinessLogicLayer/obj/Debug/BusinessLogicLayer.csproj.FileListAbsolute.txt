@@ -11,6 +11,7 @@ C:\Users\Agustin\Documents\PracticoTSI1\BusinessLogicLayer\obj\Debug\BusinessLog
 C:\Users\Agustin\Documents\PracticoTSI1\BusinessLogicLayer\bin\Debug\Shared.dll.config
 C:\Users\Agustin\Documents\PracticoTSI1\BusinessLogicLayer\bin\Debug\EntityFramework.dll
 C:\Users\Agustin\Documents\PracticoTSI1\BusinessLogicLayer\bin\Debug\EntityFramework.xml
+<<<<<<< HEAD
 C:\Users\Agustin\Documents\PracticoTSI1\BusinessLogicLayer\bin\Debug\MongoDB.Driver.dll
 C:\Users\Agustin\Documents\PracticoTSI1\BusinessLogicLayer\bin\Debug\MongoDB.Bson.dll
 C:\Users\Agustin\Documents\PracticoTSI1\BusinessLogicLayer\bin\Debug\MongoDB.Driver.Core.dll
@@ -18,3 +19,6 @@ C:\Users\Agustin\Documents\PracticoTSI1\BusinessLogicLayer\bin\Debug\System.Runt
 C:\Users\Agustin\Documents\PracticoTSI1\BusinessLogicLayer\bin\Debug\MongoDB.Driver.xml
 C:\Users\Agustin\Documents\PracticoTSI1\BusinessLogicLayer\bin\Debug\MongoDB.Bson.xml
 C:\Users\Agustin\Documents\PracticoTSI1\BusinessLogicLayer\bin\Debug\MongoDB.Driver.Core.xml
+=======
+C:\Users\Agustin\Documents\PracticoTSI1\BusinessLogicLayer\bin\Debug\BusinessLogicLayer.dll.config
+>>>>>>> 0d78f8b896d384218e5569dcfbca6da234725478

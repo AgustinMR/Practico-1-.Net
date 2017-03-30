@@ -11,6 +11,7 @@ C:\Users\Agustin\Documents\PracticoTSI1\DataAccessLayer\obj\Debug\DataAccessLaye
 C:\Users\Agustin\Documents\PracticoTSI1\DataAccessLayer\obj\Debug\DataAccessLayer.dll
 C:\Users\Agustin\Documents\PracticoTSI1\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
 C:\Users\Agustin\Documents\PracticoTSI1\DataAccessLayer\bin\Debug\Shared.dll.config
+<<<<<<< HEAD
 C:\Users\Agustin\Documents\PracticoTSI1\DataAccessLayer\bin\Debug\MongoDB.Bson.dll
 C:\Users\Agustin\Documents\PracticoTSI1\DataAccessLayer\bin\Debug\MongoDB.Driver.Core.dll
 C:\Users\Agustin\Documents\PracticoTSI1\DataAccessLayer\bin\Debug\MongoDB.Driver.dll
@@ -18,3 +19,6 @@ C:\Users\Agustin\Documents\PracticoTSI1\DataAccessLayer\bin\Debug\System.Runtime
 C:\Users\Agustin\Documents\PracticoTSI1\DataAccessLayer\bin\Debug\MongoDB.Bson.xml
 C:\Users\Agustin\Documents\PracticoTSI1\DataAccessLayer\bin\Debug\MongoDB.Driver.xml
 C:\Users\Agustin\Documents\PracticoTSI1\DataAccessLayer\bin\Debug\MongoDB.Driver.Core.xml
+=======
+C:\Users\Agustin\Documents\PracticoTSI1\DataAccessLayer\bin\Debug\GenericDbContext.dll
+>>>>>>> 0d78f8b896d384218e5569dcfbca6da234725478
