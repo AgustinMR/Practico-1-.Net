@@ -10,6 +10,11 @@ namespace DataAccessLayer
 
     public class DALEmployeesMongo : IDALEmployees
     {
+
+        public DALEmployeesMongo() {
+
+        }
+
         public void AddEmployee(Employee emp)
         {
             if (emp != null) {
