@@ -21,7 +21,7 @@ namespace DataAccessLayer
                 var mongo = new MongoClient();
                 var bd = mongo.GetDatabase("Practico1");
                 var employees = bd.GetCollection<Employee>("Employee");
-                employees.InsertOneAsync(emp);
+                employees.InsertOne(emp);
             }
         }
 
@@ -54,8 +54,9 @@ namespace DataAccessLayer
         {
             var mongo = new MongoClient();
             var bd = mongo.GetDatabase("Practico1");
-            Employee emp = bd.GetCollection<Employee>("Employee").Find(e => e.EmployeeId == id).First();
-            return emp;
+            var employees = bd.GetCollection<Employee>("Employee");
+            var result = employees.Find(e => e.EmployeeId == id).First();
+            return result;
         }
     }
 }
