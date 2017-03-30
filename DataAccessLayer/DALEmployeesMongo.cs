@@ -1,12 +1,9 @@
 ﻿using Shared.Entities;
 using System;
 using System.Collections.Generic;
-<<<<<<< HEAD
-=======
 using MongoDB.Bson;
 using MongoDB;
 using MongoDB.Driver;
->>>>>>> 1bd243345e8fe332dd5bb2fdeda09c710b8476ed
 
 namespace DataAccessLayer
 {
@@ -15,15 +12,12 @@ namespace DataAccessLayer
     {
         public void AddEmployee(Employee emp)
         {
-<<<<<<< HEAD
-=======
             if (emp != null) {
                 var mongo = new MongoClient();
                 var bd = mongo.GetDatabase("Practico1");
                 var employees = bd.GetCollection<Employee>("Employee");
                 employees.InsertOneAsync(emp);
             }
->>>>>>> 1bd243345e8fe332dd5bb2fdeda09c710b8476ed
         }
 
         public void DeleteEmployee(int id)
