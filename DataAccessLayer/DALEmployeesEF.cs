@@ -11,6 +11,7 @@ namespace DataAccessLayer
 {
 
     public class EmployeeDbContext : DbContext {
+        Type providerService = typeof(System.Data.Entity.SqlServer.SqlProviderServices);
         public EmployeeDbContext() : base("name=EmployeesConnectionString") { }
         public DbSet<Employee> Employees { get; set; }
     }
@@ -19,16 +20,18 @@ namespace DataAccessLayer
 
         public void AddEmployee(Employee emp)
         {
-            if (emp != null) {
-                EmployeeDbContext context = new EmployeeDbContext();
-                context.Employees.Add(emp);
-                context.SaveChanges();
-            }
+            EmployeeDbContext context = new EmployeeDbContext();
+            context.Employees.Add(emp);
+            context.SaveChanges();
         }
 
         public void DeleteEmployee(int id)
         {
-            throw new NotImplementedException();
+            /*EmployeeDbContext context = new EmployeeDbContext();
+            context.Employees.Find
+            context.Employees.Remove(id2);
+            context.SaveChanges();*/
+
         }
 
         public void UpdateEmployee(Employee emp)
