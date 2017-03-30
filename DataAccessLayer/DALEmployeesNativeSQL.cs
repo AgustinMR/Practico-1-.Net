@@ -9,7 +9,7 @@ using System.Data.SqlClient;
 using System.Windows.Forms;
 
 
-namespace DataAccessLayer{
+ namespace DataAccessLayer{
    public class conexion{
         SqlConnection tcp;
         SqlCommand cmd;
@@ -20,12 +20,12 @@ namespace DataAccessLayer{
             try{
                 tcp = new SqlConnection("Data Source =.; Initial Catalog =.NET; Integrated Security = True");
                 tcp.Open();
-                MessageBox.Show("Conextado");
+                MessageBox.Show("Conectado papa!");
 
             }
-            catch (Exception ex)
-            {
+            catch (Exception ex){
                 MessageBox.Show("Error al conectarse" + ex.ToString());
+                tcp.Close();
 
             }
         }
