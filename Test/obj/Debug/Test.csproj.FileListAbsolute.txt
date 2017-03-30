@@ -16,14 +16,25 @@ C:\Users\Agustin\Documents\PracticoTSI1\Test\obj\Debug\Test.pdb
 C:\Users\Agustin\Documents\PracticoTSI1\Test\bin\Debug\EntityFramework.dll
 C:\Users\Agustin\Documents\PracticoTSI1\Test\bin\Debug\EntityFramework.xml
 <<<<<<< HEAD
+<<<<<<< HEAD
 C:\Users\Agustin\Documents\PracticoTSI1\Test\bin\Debug\MongoDB.Driver.dll
+=======
+C:\Users\Agustin\Documents\PracticoTSI1\Test\bin\Debug\Test.dll.config
+C:\Users\Agustin\Documents\PracticoTSI1\Test\bin\Debug\BusinessLogicLayer.dll.config
+>>>>>>> f26b569d0d244eb720e8306e6cac3887b26e8cdb
 C:\Users\Agustin\Documents\PracticoTSI1\Test\bin\Debug\MongoDB.Bson.dll
 C:\Users\Agustin\Documents\PracticoTSI1\Test\bin\Debug\MongoDB.Driver.Core.dll
 C:\Users\Agustin\Documents\PracticoTSI1\Test\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+=======
+C:\Users\Agustin\Documents\PracticoTSI1\Test\bin\Debug\MongoDB.Driver.dll
 C:\Users\Agustin\Documents\PracticoTSI1\Test\bin\Debug\MongoDB.Driver.xml
+>>>>>>> 1bd243345e8fe332dd5bb2fdeda09c710b8476ed
 C:\Users\Agustin\Documents\PracticoTSI1\Test\bin\Debug\MongoDB.Bson.xml
 C:\Users\Agustin\Documents\PracticoTSI1\Test\bin\Debug\MongoDB.Driver.Core.xml
+<<<<<<< HEAD
 =======
 C:\Users\Agustin\Documents\PracticoTSI1\Test\bin\Debug\Test.dll.config
 C:\Users\Agustin\Documents\PracticoTSI1\Test\bin\Debug\BusinessLogicLayer.dll.config
 >>>>>>> 0d78f8b896d384218e5569dcfbca6da234725478
+=======
+>>>>>>> f26b569d0d244eb720e8306e6cac3887b26e8cdb
