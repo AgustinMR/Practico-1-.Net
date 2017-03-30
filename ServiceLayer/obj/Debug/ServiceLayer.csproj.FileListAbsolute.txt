@@ -21,9 +21,6 @@ C:\Users\Agustin\Documents\PracticoTSI1\ServiceLayer\bin\Debug\MongoDB.Driver.Co
 C:\Users\Agustin\Documents\PracticoTSI1\ServiceLayer\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
 =======
 C:\Users\Agustin\Documents\PracticoTSI1\ServiceLayer\bin\Debug\MongoDB.Driver.dll
-C:\Users\Agustin\Documents\PracticoTSI1\ServiceLayer\bin\Debug\MongoDB.Bson.dll
-C:\Users\Agustin\Documents\PracticoTSI1\ServiceLayer\bin\Debug\MongoDB.Driver.Core.dll
-C:\Users\Agustin\Documents\PracticoTSI1\ServiceLayer\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
 C:\Users\Agustin\Documents\PracticoTSI1\ServiceLayer\bin\Debug\MongoDB.Driver.xml
 >>>>>>> 1bd243345e8fe332dd5bb2fdeda09c710b8476ed
 C:\Users\Agustin\Documents\PracticoTSI1\ServiceLayer\bin\Debug\MongoDB.Bson.xml
