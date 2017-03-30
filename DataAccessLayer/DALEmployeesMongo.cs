@@ -1,9 +1,6 @@
 ﻿using Shared.Entities;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DataAccessLayer
 {
@@ -11,7 +8,6 @@ namespace DataAccessLayer
     {
         public void AddEmployee(Employee emp)
         {
-            throw new NotImplementedException();
         }
 
         public void DeleteEmployee(int id)
