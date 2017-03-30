@@ -10,3 +10,4 @@ C:\Users\Agustin\Documents\PracticoTSI1\CrossCutting\bin\Debug\System.Runtime.In
 C:\Users\Agustin\Documents\PracticoTSI1\CrossCutting\bin\Debug\MongoDB.Bson.xml
 C:\Users\Agustin\Documents\PracticoTSI1\CrossCutting\bin\Debug\MongoDB.Driver.xml
 C:\Users\Agustin\Documents\PracticoTSI1\CrossCutting\bin\Debug\MongoDB.Driver.Core.xml
+C:\Users\Agustin\Documents\PracticoTSI1\CrossCutting\obj\Debug\Shared.csprojResolveAssemblyReference.cache
