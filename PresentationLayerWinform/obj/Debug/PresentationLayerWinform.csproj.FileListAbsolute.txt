@@ -8,3 +8,12 @@ C:\Users\Agustin\Documents\PracticoTSI1\PresentationLayerWinform\obj\Debug\Prese
 C:\Users\Agustin\Documents\PracticoTSI1\PresentationLayerWinform\obj\Debug\PresentationLayerWinform.csproj.GenerateResource.Cache
 C:\Users\Agustin\Documents\PracticoTSI1\PresentationLayerWinform\obj\Debug\PresentationLayerWinform.exe
 C:\Users\Agustin\Documents\PracticoTSI1\PresentationLayerWinform\obj\Debug\PresentationLayerWinform.pdb
+C:\Users\Pedro Moretto\Desktop\github pro\Practico-1-.Net\PresentationLayerWinform\bin\Debug\PresentationLayerWinform.exe.config
+C:\Users\Pedro Moretto\Desktop\github pro\Practico-1-.Net\PresentationLayerWinform\bin\Debug\PresentationLayerWinform.exe
+C:\Users\Pedro Moretto\Desktop\github pro\Practico-1-.Net\PresentationLayerWinform\bin\Debug\PresentationLayerWinform.pdb
+C:\Users\Pedro Moretto\Desktop\github pro\Practico-1-.Net\PresentationLayerWinform\obj\Debug\PresentationLayerWinform.EmployeeAddEdit.resources
+C:\Users\Pedro Moretto\Desktop\github pro\Practico-1-.Net\PresentationLayerWinform\obj\Debug\PresentationLayerWinform.EmployeeList.resources
+C:\Users\Pedro Moretto\Desktop\github pro\Practico-1-.Net\PresentationLayerWinform\obj\Debug\PresentationLayerWinform.Properties.Resources.resources
+C:\Users\Pedro Moretto\Desktop\github pro\Practico-1-.Net\PresentationLayerWinform\obj\Debug\PresentationLayerWinform.csproj.GenerateResource.Cache
+C:\Users\Pedro Moretto\Desktop\github pro\Practico-1-.Net\PresentationLayerWinform\obj\Debug\PresentationLayerWinform.exe
+C:\Users\Pedro Moretto\Desktop\github pro\Practico-1-.Net\PresentationLayerWinform\obj\Debug\PresentationLayerWinform.pdb

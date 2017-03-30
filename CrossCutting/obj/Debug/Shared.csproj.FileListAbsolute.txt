@@ -4,3 +4,9 @@ C:\Users\Agustin\Documents\PracticoTSI1\CrossCutting\obj\Debug\Shared.csprojReso
 C:\Users\Agustin\Documents\PracticoTSI1\CrossCutting\obj\Debug\Shared.dll
 C:\Users\Agustin\Documents\PracticoTSI1\CrossCutting\obj\Debug\Shared.pdb
 C:\Users\Agustin\Documents\PracticoTSI1\CrossCutting\bin\Debug\Shared.dll.config
+C:\Users\Pedro Moretto\Desktop\github pro\Practico-1-.Net\CrossCutting\bin\Debug\Shared.dll.config
+C:\Users\Pedro Moretto\Desktop\github pro\Practico-1-.Net\CrossCutting\bin\Debug\Shared.dll
+C:\Users\Pedro Moretto\Desktop\github pro\Practico-1-.Net\CrossCutting\bin\Debug\Shared.pdb
+C:\Users\Pedro Moretto\Desktop\github pro\Practico-1-.Net\CrossCutting\obj\Debug\Shared.csprojResolveAssemblyReference.cache
+C:\Users\Pedro Moretto\Desktop\github pro\Practico-1-.Net\CrossCutting\obj\Debug\Shared.dll
+C:\Users\Pedro Moretto\Desktop\github pro\Practico-1-.Net\CrossCutting\obj\Debug\Shared.pdb

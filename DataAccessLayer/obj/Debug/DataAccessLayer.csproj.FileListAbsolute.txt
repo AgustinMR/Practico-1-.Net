@@ -12,3 +12,17 @@ C:\Users\Agustin\Documents\PracticoTSI1\DataAccessLayer\obj\Debug\DataAccessLaye
 C:\Users\Agustin\Documents\PracticoTSI1\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
 C:\Users\Agustin\Documents\PracticoTSI1\DataAccessLayer\bin\Debug\Shared.dll.config
 C:\Users\Agustin\Documents\PracticoTSI1\DataAccessLayer\bin\Debug\GenericDbContext.dll
+C:\Users\Pedro Moretto\Desktop\github pro\Practico-1-.Net\DataAccessLayer\bin\Debug\DataAccessLayer.dll.config
+C:\Users\Pedro Moretto\Desktop\github pro\Practico-1-.Net\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\Pedro Moretto\Desktop\github pro\Practico-1-.Net\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\Pedro Moretto\Desktop\github pro\Practico-1-.Net\DataAccessLayer\bin\Debug\EntityFramework.dll
+C:\Users\Pedro Moretto\Desktop\github pro\Practico-1-.Net\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Pedro Moretto\Desktop\github pro\Practico-1-.Net\DataAccessLayer\bin\Debug\GenericDbContext.dll
+C:\Users\Pedro Moretto\Desktop\github pro\Practico-1-.Net\DataAccessLayer\bin\Debug\Shared.dll
+C:\Users\Pedro Moretto\Desktop\github pro\Practico-1-.Net\DataAccessLayer\bin\Debug\Shared.pdb
+C:\Users\Pedro Moretto\Desktop\github pro\Practico-1-.Net\DataAccessLayer\bin\Debug\Shared.dll.config
+C:\Users\Pedro Moretto\Desktop\github pro\Practico-1-.Net\DataAccessLayer\bin\Debug\EntityFramework.xml
+C:\Users\Pedro Moretto\Desktop\github pro\Practico-1-.Net\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Pedro Moretto\Desktop\github pro\Practico-1-.Net\DataAccessLayer\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache
+C:\Users\Pedro Moretto\Desktop\github pro\Practico-1-.Net\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+C:\Users\Pedro Moretto\Desktop\github pro\Practico-1-.Net\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
