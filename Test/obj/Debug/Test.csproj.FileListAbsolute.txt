@@ -15,8 +15,10 @@ C:\Users\Agustin\Documents\PracticoTSI1\Test\obj\Debug\Test.dll
 C:\Users\Agustin\Documents\PracticoTSI1\Test\obj\Debug\Test.pdb
 C:\Users\Agustin\Documents\PracticoTSI1\Test\bin\Debug\EntityFramework.dll
 C:\Users\Agustin\Documents\PracticoTSI1\Test\bin\Debug\EntityFramework.xml
+C:\Users\Agustin\Documents\PracticoTSI1\Test\bin\Debug\MongoDB.Driver.dll
 C:\Users\Agustin\Documents\PracticoTSI1\Test\bin\Debug\Test.dll.config
 C:\Users\Agustin\Documents\PracticoTSI1\Test\bin\Debug\BusinessLogicLayer.dll.config
+<<<<<<< HEAD
 C:\Users\Pedro Moretto\Desktop\github pro\Practico-1-.Net\Test\bin\Debug\Test.dll.config
 C:\Users\Pedro Moretto\Desktop\github pro\Practico-1-.Net\Test\bin\Debug\Test.dll
 C:\Users\Pedro Moretto\Desktop\github pro\Practico-1-.Net\Test\bin\Debug\Test.pdb
@@ -36,3 +38,11 @@ C:\Users\Pedro Moretto\Desktop\github pro\Practico-1-.Net\Test\bin\Debug\es\Micr
 C:\Users\Pedro Moretto\Desktop\github pro\Practico-1-.Net\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
 C:\Users\Pedro Moretto\Desktop\github pro\Practico-1-.Net\Test\obj\Debug\Test.dll
 C:\Users\Pedro Moretto\Desktop\github pro\Practico-1-.Net\Test\obj\Debug\Test.pdb
+=======
+C:\Users\Agustin\Documents\PracticoTSI1\Test\bin\Debug\MongoDB.Bson.dll
+C:\Users\Agustin\Documents\PracticoTSI1\Test\bin\Debug\MongoDB.Driver.Core.dll
+C:\Users\Agustin\Documents\PracticoTSI1\Test\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Agustin\Documents\PracticoTSI1\Test\bin\Debug\MongoDB.Driver.xml
+C:\Users\Agustin\Documents\PracticoTSI1\Test\bin\Debug\MongoDB.Bson.xml
+C:\Users\Agustin\Documents\PracticoTSI1\Test\bin\Debug\MongoDB.Driver.Core.xml
+>>>>>>> origin

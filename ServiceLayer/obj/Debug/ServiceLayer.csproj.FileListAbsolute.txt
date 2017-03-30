@@ -9,13 +9,14 @@ C:\Users\Agustin\Documents\PracticoTSI1\ServiceLayer\bin\Debug\BusinessLogicLaye
 C:\Users\Agustin\Documents\PracticoTSI1\ServiceLayer\bin\Debug\Shared.pdb
 C:\Users\Agustin\Documents\PracticoTSI1\ServiceLayer\bin\Debug\DataAccessLayer.pdb
 C:\Users\Agustin\Documents\PracticoTSI1\ServiceLayer\bin\Debug\DataAccessLayer.dll.config
-C:\Users\Agustin\Documents\PracticoTSI1\ServiceLayer\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Agustin\Documents\PracticoTSI1\ServiceLayer\bin\Debug\EntityFramework.xml
 C:\Users\Agustin\Documents\PracticoTSI1\ServiceLayer\obj\Debug\ServiceLayer.csprojResolveAssemblyReference.cache
 C:\Users\Agustin\Documents\PracticoTSI1\ServiceLayer\obj\Debug\ServiceLayer.exe
 C:\Users\Agustin\Documents\PracticoTSI1\ServiceLayer\obj\Debug\ServiceLayer.pdb
 C:\Users\Agustin\Documents\PracticoTSI1\ServiceLayer\bin\Debug\Shared.dll.config
+C:\Users\Agustin\Documents\PracticoTSI1\ServiceLayer\bin\Debug\MongoDB.Driver.dll
 C:\Users\Agustin\Documents\PracticoTSI1\ServiceLayer\bin\Debug\BusinessLogicLayer.dll.config
+<<<<<<< HEAD
 C:\Users\Pedro Moretto\Desktop\github pro\Practico-1-.Net\ServiceLayer\bin\Debug\ServiceLayer.exe.config
 C:\Users\Pedro Moretto\Desktop\github pro\Practico-1-.Net\ServiceLayer\bin\Debug\ServiceLayer.exe
 C:\Users\Pedro Moretto\Desktop\github pro\Practico-1-.Net\ServiceLayer\bin\Debug\ServiceLayer.pdb
@@ -34,3 +35,11 @@ C:\Users\Pedro Moretto\Desktop\github pro\Practico-1-.Net\ServiceLayer\bin\Debug
 C:\Users\Pedro Moretto\Desktop\github pro\Practico-1-.Net\ServiceLayer\obj\Debug\ServiceLayer.csprojResolveAssemblyReference.cache
 C:\Users\Pedro Moretto\Desktop\github pro\Practico-1-.Net\ServiceLayer\obj\Debug\ServiceLayer.exe
 C:\Users\Pedro Moretto\Desktop\github pro\Practico-1-.Net\ServiceLayer\obj\Debug\ServiceLayer.pdb
+=======
+C:\Users\Agustin\Documents\PracticoTSI1\ServiceLayer\bin\Debug\MongoDB.Bson.dll
+C:\Users\Agustin\Documents\PracticoTSI1\ServiceLayer\bin\Debug\MongoDB.Driver.Core.dll
+C:\Users\Agustin\Documents\PracticoTSI1\ServiceLayer\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Agustin\Documents\PracticoTSI1\ServiceLayer\bin\Debug\MongoDB.Driver.xml
+C:\Users\Agustin\Documents\PracticoTSI1\ServiceLayer\bin\Debug\MongoDB.Bson.xml
+C:\Users\Agustin\Documents\PracticoTSI1\ServiceLayer\bin\Debug\MongoDB.Driver.Core.xml
+>>>>>>> origin

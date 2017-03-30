@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 namespace Shared.Entities {
 
     public abstract class Employee {
-        private int Id { get; set; }
-        private string Name { get; set; }
-        private DateTime StartDate { get; set; }
+        public int EmployeeId { get; set; }
+        public string Name { get; set; }
+        public DateTime StartDate { get; set; }
     }
 }
