@@ -4,8 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Shared.Entities;
-using DataAccessLayer;
 using MongoDB.Bson.Serialization;
+using BusinessLogicLayer;
 
 namespace PresentationLayerWinform
 {
@@ -18,26 +18,20 @@ namespace PresentationLayerWinform
         static void Main()
         {
 
-            BsonClassMap.RegisterClassMap<Employee>(cm => {
-                cm.AutoMap();
-            });
-
             /*
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new EmployeeList());
-            
-            var op = new DALEmployeesMongo();
-            var emp = (PartTimeEmployee) op.GetEmployee(3);
-            Console.WriteLine(emp.Name);
+            Application.Run(new EmployeeList());*/
 
+            /*
             PartTimeEmployee e = new PartTimeEmployee();
             e.HourlyRate = 666.6;
             e.StartDate = DateTime.Parse("2017-07-16");
             e.Name = "Mengano";
             e.EmployeeId = 2;*/
 
-            DALEmployeesMongo c = new DALEmployeesMongo();
+            BLEmployees b = new BLEmployees();
+            Console.WriteLine(b.CalcPartTimeEmployeeSalary(1, 2));
 
             /*FullTimeEmployee fe = new FullTimeEmployee();
             fe.EmployeeId = 1;
@@ -46,12 +40,12 @@ namespace PresentationLayerWinform
 
             c.AddEmployee(fe);*/
 
-
+            /*
             PartTimeEmployee pepe = new PartTimeEmployee();
             pepe.HourlyRate = 100.22;
             pepe.Name = "Pelado Puto";
             pepe.StartDate = DateTime.Parse("2010-8-5");
-            c.AddEmployee(pepe);
+            c.AddEmployee(pepe);*/
 
             /*c.DeleteEmployee(pepe.EmployeeId);*/
 

@@ -2,9 +2,7 @@
 using Shared.Entities;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Shared;
 
 namespace BusinessLogicLayer
 {
@@ -17,34 +15,42 @@ namespace BusinessLogicLayer
             _dal = dal;
         }
 
+        public BLEmployees()
+        {
+
+        }
+
         public void AddEmployee(Employee emp)
         {
-            throw new NotImplementedException();
+            new DALEmployeesMongo().AddEmployee(emp);
         }
 
         public void DeleteEmployee(int id)
         {
-            throw new NotImplementedException();
+            new DALEmployeesMongo().DeleteEmployee(id);
         }
 
         public void UpdateEmployee(Employee emp)
         {
-            throw new NotImplementedException();
+            new DALEmployeesMongo().UpdateEmployee(emp);
         }
 
         public List<Employee> GetAllEmployees()
         {
-            throw new NotImplementedException();
+            return new DALEmployeesMongo().GetAllEmployees();
         }
 
         public Employee GetEmployee(int id)
         {
-            throw new NotImplementedException();
+            return new DALEmployeesMongo().GetEmployee(id);
         }
 
         public double CalcPartTimeEmployeeSalary(int idEmployee, int hours)
         {
-            throw new NotImplementedException();
+            Employee e = GetEmployee(idEmployee);
+            if (e == null) throw new Shared.Exception.NotAnExistingEmployee(idEmployee);
+            if (e.GetType() == typeof(FullTimeEmployee)) throw new Shared.Exception.NotPartTimeEmployeeException(idEmployee);
+            return (hours * ((PartTimeEmployee)e).HourlyRate);
         }
     }
 }

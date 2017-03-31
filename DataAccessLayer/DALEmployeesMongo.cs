@@ -73,7 +73,7 @@ namespace DataAccessLayer
             var mongo = new MongoClient();
             var bd = mongo.GetDatabase("Practico1");
             var employees = bd.GetCollection<Employee>("Employee");
-            var result = employees.Find(e => e.EmployeeId == id).First();
+            var result = employees.Find(e => e.EmployeeId == id).FirstOrDefault();
             return result;
         }
     }
