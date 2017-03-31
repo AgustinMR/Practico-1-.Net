@@ -10,7 +10,7 @@ using System.Windows.Forms;
 namespace DataAccessLayer
 {
 
-    class conexion
+    public class conexion
     {
         SqlConnection tcp;
         SqlCommand cmd;

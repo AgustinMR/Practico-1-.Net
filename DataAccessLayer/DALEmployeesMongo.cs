@@ -2,8 +2,8 @@
 using System;
 using System.Collections.Generic;
 using MongoDB.Bson;
-using MongoDB;
 using MongoDB.Driver;
+
 
 namespace DataAccessLayer
 {
@@ -35,11 +35,29 @@ namespace DataAccessLayer
 
         public void UpdateEmployee(Employee emp)
         {
-            if (emp != null) {
-                var filter = Builders<BsonDocument>.Filter.Eq("EmployeeId", emp.EmployeeId);
+        }
+
+        public void UpdateEmployee(FullTimeEmployee emp)
+        {
+            if (emp != null)
+            {
                 var mongo = new MongoClient();
                 var bd = mongo.GetDatabase("Practico1");
-                var employees = bd.GetCollection<Employee>("Employee");
+                var update = Builders<FullTimeEmployee>.Update.Set(e => e.Name, emp.Name).Set(e => e.StartDate, emp.StartDate).Set(e => e.Salary, emp.Salary);
+                var filter = Builders<FullTimeEmployee>.Filter.Eq(e => e.EmployeeId, emp.EmployeeId);
+                bd.GetCollection<FullTimeEmployee>("Employee").FindOneAndUpdate(filter, update);
+            }
+        }
+
+        public void UpdateEmployee(PartTimeEmployee emp)
+        {
+            if (emp != null)
+            {
+                var mongo = new MongoClient();
+                var bd = mongo.GetDatabase("Practico1");
+                var update = Builders<PartTimeEmployee>.Update.Set(e => e.Name, emp.Name).Set(e => e.StartDate, emp.StartDate).Set(e => e.HourlyRate, emp.HourlyRate);
+                var filter = Builders<PartTimeEmployee>.Filter.Eq("EmployeeId", emp.EmployeeId);
+                bd.GetCollection<PartTimeEmployee>("Employee").FindOneAndUpdate(filter, update);
             }
         }
 
