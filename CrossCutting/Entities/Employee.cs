@@ -13,7 +13,7 @@ namespace Shared.Entities {
     public abstract class Employee
     {
         [BsonId]
-        public ObjectId Id { get; }
+        public ObjectId Id { get; set; }
         public int EmployeeId { get; set; }
         public string Name { get; set; }
         public DateTime StartDate { get; set; }

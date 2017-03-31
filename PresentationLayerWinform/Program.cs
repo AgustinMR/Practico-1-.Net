@@ -46,13 +46,14 @@ namespace PresentationLayerWinform
 
             c.AddEmployee(fe);*/
 
-            FullTimeEmployee pepe = (FullTimeEmployee) c.GetEmployee(1);
-            pepe.Salary = 100;
-            pepe.Name = "Ochoa";
-            pepe.StartDate = DateTime.Parse("2010-8-5");
-            c.UpdateEmployee(pepe);
 
-            c.DeleteEmployee(pepe.EmployeeId);
+            PartTimeEmployee pepe = new PartTimeEmployee();
+            pepe.HourlyRate = 100.22;
+            pepe.Name = "Pelado Puto";
+            pepe.StartDate = DateTime.Parse("2010-8-5");
+            c.AddEmployee(pepe);
+
+            /*c.DeleteEmployee(pepe.EmployeeId);*/
 
         }
     }
