@@ -7,29 +7,24 @@ using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Windows.Forms;
 
-namespace DataAccessLayer
-{
+namespace DataAccessLayer{
 
-    class conexion
-    {
+    public class conexion{
         SqlConnection tcp;
-        SqlCommand cmd;
-        SqlDataReader cin;
+        //SqlCommand cmd;
+        //SqlDataReader cin;
 
-        public conexion()
-        {
+        public conexion(){
 
-            try
-            {
+            try{
                 tcp = new SqlConnection("Data Source =.; Initial Catalog =.NET; Integrated Security = True");
                 tcp.Open();
-                MessageBox.Show("Conextado");
+                MessageBox.Show("Conectado");
 
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error al conectarse" + ex.ToString());
-
+            catch (Exception ex){
+                MessageBox.Show("El siguiente error es traido a ustedes por, me importa un sorvete, al menos trata de hacerte el interesante cuando lo leas: error: " + ex.ToString());
+                tcp.Close();
             }
         }
     }
