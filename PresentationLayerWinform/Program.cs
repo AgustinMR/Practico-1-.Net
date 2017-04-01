@@ -22,11 +22,13 @@ namespace PresentationLayerWinform
 
             DALEmployeesEF obj = new DALEmployeesEF();
             FullTimeEmployee emp = new FullTimeEmployee();
-            emp.EmployeeId = 1;
-            emp.Name = "Bruno";
-            emp.StartDate = new DateTime(1997, 1, 9);
-            emp.Salary = 1000000;
+            emp.EmployeeId = 7;
+            emp.Name = "Bruno2";
+            emp.StartDate = new DateTime(1967, 1, 9);
+            emp.Salary = 5;
             obj.AddEmployee(emp);
+            //obj.UpdateEmployee(emp);
+            //obj.DeleteEmployee(1);
         }
     }
 }

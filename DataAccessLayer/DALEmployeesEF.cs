@@ -27,26 +27,33 @@ namespace DataAccessLayer
 
         public void DeleteEmployee(int id)
         {
-            /*EmployeeDbContext context = new EmployeeDbContext();
-            context.Employees.Find
-            context.Employees.Remove(id2);
-            context.SaveChanges();*/
-
+            EmployeeDbContext context = new EmployeeDbContext();
+            Employee emp = (from d in context.Employees where d.EmployeeId == id select d).Single();
+            context.Employees.Remove(emp);
+            context.SaveChanges();
         }
 
         public void UpdateEmployee(Employee emp)
         {
-            throw new NotImplementedException();
+            EmployeeDbContext context = new EmployeeDbContext();
+            Employee empBD = (from d in context.Employees where d.EmployeeId == emp.EmployeeId select d).Single();
+            empBD.Name = emp.Name;
+            empBD.StartDate = emp.StartDate;
+            context.SaveChanges();
         }
 
         public List<Employee> GetAllEmployees()
         {
-            throw new NotImplementedException();
+            EmployeeDbContext context = new EmployeeDbContext();
+            return context.Employees.ToList();
         }
 
         public Employee GetEmployee(int id)
         {
-            throw new NotImplementedException();
+            EmployeeDbContext context = new EmployeeDbContext();
+            Employee empBD = (from d in context.Employees where d.EmployeeId == id select d).Single();
+            context.SaveChanges();
+            return empBD;
         }
     }
 

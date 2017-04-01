@@ -9,7 +9,7 @@
           <Key>
             <PropertyRef Name="EMP_ID" />
           </Key>
-          <Property Name="EMP_ID" Type="int" Nullable="false" />
+          <Property Name="EMP_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
           <Property Name="NAME" Type="varchar" MaxLength="255" Nullable="false" />
           <Property Name="START_DATE" Type="datetime" Nullable="false" />
           <Property Name="SALARY" Type="int" />
@@ -28,7 +28,7 @@
           <Key>
             <PropertyRef Name="EmployeeId" />
           </Key>
-          <Property Name="EmployeeId" Type="Int32" Nullable="false" />
+          <Property Name="EmployeeId" Type="Int32" Nullable="false" a:SetterAccess="Public" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="StartDate" Type="DateTime" Nullable="false" Precision="3" />
         </EntityType>
