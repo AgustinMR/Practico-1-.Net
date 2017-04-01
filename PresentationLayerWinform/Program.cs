@@ -18,10 +18,10 @@ namespace PresentationLayerWinform
         static void Main()
         {
 
-            /*
+            
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new EmployeeList());*/
+            Application.Run(new EmployeeList());
 
             /*
             PartTimeEmployee e = new PartTimeEmployee();
