@@ -7,8 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Shared.Entities;
-using BusinessLogicLayer;
 
 namespace PresentationLayerWinform
 {
@@ -21,7 +19,7 @@ namespace PresentationLayerWinform
 
         private void EmployeeList_Load(object sender, EventArgs e)
         {
-
+            /*
             DataTable dataTable = new DataTable();
             DataColumn[] columns = { new DataColumn("Employee Id"), new DataColumn("Name"), new DataColumn("Start Date"), new DataColumn("Emp. Type") };
             dataTable.Columns.AddRange(columns);
@@ -33,7 +31,7 @@ namespace PresentationLayerWinform
                 else typeEmp = "Part Time";
                 Object[] row = {emp.EmployeeId, emp.Name, emp.StartDate, typeEmp };
                 dataTable.Rows.Add(row);
-            }
+            }*/
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -49,6 +47,11 @@ namespace PresentationLayerWinform
         private void newEmployeeBtn_Click(object sender, EventArgs e)
         {
             new EmployeeAddEdit().Show();
+        }
+
+        private void employeeBindingSource_CurrentChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

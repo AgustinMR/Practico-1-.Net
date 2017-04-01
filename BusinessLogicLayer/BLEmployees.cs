@@ -15,34 +15,29 @@ namespace BusinessLogicLayer
             _dal = dal;
         }
 
-        public BLEmployees()
-        {
-
-        }
-
         public void AddEmployee(Employee emp)
         {
-            new DALEmployeesMongo().AddEmployee(emp);
+            _dal.AddEmployee(emp);
         }
 
         public void DeleteEmployee(int id)
         {
-            new DALEmployeesMongo().DeleteEmployee(id);
+            _dal.DeleteEmployee(id);
         }
 
         public void UpdateEmployee(Employee emp)
         {
-            new DALEmployeesMongo().UpdateEmployee(emp);
+            _dal.UpdateEmployee(emp);
         }
 
         public List<Employee> GetAllEmployees()
         {
-            return new DALEmployeesMongo().GetAllEmployees();
+            return _dal.GetAllEmployees();
         }
 
         public Employee GetEmployee(int id)
         {
-            return new DALEmployeesMongo().GetEmployee(id);
+            return _dal.GetEmployee(id);
         }
 
         public double CalcPartTimeEmployeeSalary(int idEmployee, int hours)

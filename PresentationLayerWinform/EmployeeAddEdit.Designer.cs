@@ -1,4 +1,6 @@
-﻿namespace PresentationLayerWinform
+﻿using System;
+
+namespace PresentationLayerWinform
 {
     partial class EmployeeAddEdit
     {
@@ -141,6 +143,11 @@
             this.tabPage1.PerformLayout();
             this.ResumeLayout(false);
 
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         #endregion

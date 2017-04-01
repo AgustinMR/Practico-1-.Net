@@ -32,9 +32,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.newEmployeeBtn = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.employeesTable = new System.Windows.Forms.DataGridView();
             this.employeeBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.employeesTable)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -76,35 +74,12 @@
             this.button1.Text = "Delete";
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // employeesTable
-            // 
-            this.employeesTable.AllowUserToAddRows = false;
-            this.employeesTable.AllowUserToDeleteRows = false;
-            this.employeesTable.AllowUserToOrderColumns = true;
-            this.employeesTable.AllowUserToResizeRows = false;
-            this.employeesTable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.employeesTable.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders;
-            this.employeesTable.BackgroundColor = System.Drawing.Color.White;
-            this.employeesTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.employeesTable.Location = new System.Drawing.Point(19, 82);
-            this.employeesTable.MultiSelect = false;
-            this.employeesTable.Name = "employeesTable";
-            this.employeesTable.ReadOnly = true;
-            this.employeesTable.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.employeesTable.Size = new System.Drawing.Size(903, 558);
-            this.employeesTable.TabIndex = 4;
-            // 
-            // employeeBindingSource
-            // 
-            this.employeeBindingSource.DataSource = typeof(Shared.Entities.Employee);
-            // 
             // EmployeeList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(944, 661);
-            this.Controls.Add(this.employeesTable);
             this.Controls.Add(this.newEmployeeBtn);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
@@ -114,7 +89,6 @@
             this.Name = "EmployeeList";
             this.Text = "EmployeeList";
             this.Load += new System.EventHandler(this.EmployeeList_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.employeesTable)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -126,7 +100,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button newEmployeeBtn;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView employeesTable;
         private System.Windows.Forms.BindingSource employeeBindingSource;
     }
 }
