@@ -44,14 +44,11 @@ namespace DataAccessLayer
             {
                 context.Employees.Attach(emp);
                 var entry = context.Entry(e);
+                entry.State = EntityState.Modified;
                 entry.Property(empOld => empOld.Name).IsModified = true;
                 entry.Property(empOld => empOld.StartDate).IsModified = true;
+                context.SaveChanges();
             }
-            else
-            {
-                context.Employees.Add(emp);    
-            }
-            context.SaveChanges();
         }
 
         public List<Employee> GetAllEmployees()
