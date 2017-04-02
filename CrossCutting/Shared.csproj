@@ -55,6 +55,7 @@
     <Compile Include="Entities\Employee.cs" />
     <Compile Include="Entities\FullTimeEmployee.cs" />
     <Compile Include="Entities\PartTimeEmployee.cs" />
+    <Compile Include="Entities\SequenceAux.cs" />
     <Compile Include="Exception\NotAnExistingEmployee.cs" />
     <Compile Include="Exception\NotPartTimeEmployeeException.cs" />
     <Compile Include="Practico1DataSet.Designer.cs">

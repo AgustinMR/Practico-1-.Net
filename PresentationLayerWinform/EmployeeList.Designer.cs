@@ -59,14 +59,13 @@
             this.newEmployeeBtn.Name = "newEmployeeBtn";
             this.newEmployeeBtn.Size = new System.Drawing.Size(103, 37);
             this.newEmployeeBtn.TabIndex = 2;
-            this.newEmployeeBtn.Text = "Create";
+            this.newEmployeeBtn.Text = "Add / Edit";
             this.newEmployeeBtn.UseVisualStyleBackColor = false;
             this.newEmployeeBtn.Click += new System.EventHandler(this.newEmployeeBtn_Click);
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Firebrick;
-            this.button1.Enabled = false;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(710, 26);
@@ -75,6 +74,7 @@
             this.button1.TabIndex = 3;
             this.button1.Text = "Delete";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // employees
             // 

@@ -22,12 +22,12 @@ namespace ServiceLayer
 
         private static void SetupDependencies()
         {
-            //blHandler = new BLEmployees(new DataAccessLayer.DALEmployeesMongo());
-            using( UnityContainer container = new UnityContainer ())
+            blHandler = new BLEmployees(new DataAccessLayer.DALEmployeesMongo());
+            /*using( UnityContainer container = new UnityContainer ())
             {
                 Helper.RegisterTypes(container);
                 blHandler = container.Resolve<IBLEmployees>();
-            }
+            }*/
         }
 
         private static void SetupService()

@@ -54,5 +54,15 @@ namespace PresentationLayerWinform
 
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DialogResult dr = MessageBox.Show("Are you sure you want to Delete the Employee?", "Confirmation", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+            if (dr == DialogResult.OK)
+            {
+                new ServiceEmployeesClient().DeleteEmployee(int.Parse(employees.SelectedRows[0].Cells[0].Value.ToString()));
+                employees.Rows.RemoveAt(employees.SelectedRows[0].Index);
+            }
+            
+        }
     }
 }
