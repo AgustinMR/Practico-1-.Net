@@ -6,7 +6,6 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
-using System.ServiceModel;
 
 namespace ServiceLayer
 {

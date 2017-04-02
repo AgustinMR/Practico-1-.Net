@@ -33,7 +33,9 @@
             this.newEmployeeBtn = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.employeeBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.employees = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.employees)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -74,12 +76,29 @@
             this.button1.Text = "Delete";
             this.button1.UseVisualStyleBackColor = false;
             // 
+            // employees
+            // 
+            this.employees.AllowUserToAddRows = false;
+            this.employees.AllowUserToDeleteRows = false;
+            this.employees.AllowUserToResizeRows = false;
+            this.employees.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.employees.BackgroundColor = System.Drawing.Color.White;
+            this.employees.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.employees.Location = new System.Drawing.Point(19, 85);
+            this.employees.MultiSelect = false;
+            this.employees.Name = "employees";
+            this.employees.ReadOnly = true;
+            this.employees.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.employees.Size = new System.Drawing.Size(903, 564);
+            this.employees.TabIndex = 4;
+            // 
             // EmployeeList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(944, 661);
+            this.Controls.Add(this.employees);
             this.Controls.Add(this.newEmployeeBtn);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
@@ -90,6 +109,7 @@
             this.Text = "EmployeeList";
             this.Load += new System.EventHandler(this.EmployeeList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.employees)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -101,6 +121,7 @@
         private System.Windows.Forms.Button newEmployeeBtn;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.BindingSource employeeBindingSource;
+        private System.Windows.Forms.DataGridView employees;
     }
 }
 
