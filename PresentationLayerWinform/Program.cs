@@ -16,13 +16,17 @@ namespace PresentationLayerWinform
         [STAThread]
         static void Main()
         {
+            /*
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new EmployeeList());
             
             var op = new DALEmployeesMongo();
             var emp = (PartTimeEmployee) op.GetEmployee(3);
-            Console.WriteLine(emp.Name);
+            Console.WriteLine(emp.Name);*/
+
+            conexion c = new conexion();
+
         }
     }
 }
