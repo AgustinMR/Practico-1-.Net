@@ -10,6 +10,8 @@ using System.Windows.Forms;
 namespace DataAccessLayer
 {
 
+    /*
+
     public class conexion
     {
         SqlConnection tcp;
@@ -32,7 +34,7 @@ namespace DataAccessLayer
 
             }
         }
-    }
+    }*/
 
     public class DALEmployeesNativeSQL : IDALEmployees
     {
