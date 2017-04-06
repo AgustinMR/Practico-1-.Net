@@ -26,6 +26,29 @@ namespace ServiceLayer
 
         private static void SetupService()
         {
+            Uri serviceAddress = new Uri("http://localhost:8834/tsi1");
+            ServiceHost service = null;
+            try
+            {
+                service = new ServiceHost(typeof(ServiceEmployees), serviceAddress);
+                service.AddServiceEndpoint(typeof(IServiceEmployees), new WSHttpBinding(), "EmployeeService");
+                ServiceMetadataBehavior smb = new ServiceMetadataBehavior();
+                smb.HttpGetEnabled = true;
+                service.Description.Behaviors.Add(smb);
+                service.Open();
+                Console.WriteLine("Employee WFC Service is runing...");
+                Console.WriteLine("Press <ENTER> to terminate service.");
+                Console.WriteLine();
+                Console.ReadLine();
+            }
+            catch (CommunicationException e)
+            {
+                Console.WriteLine("An Exception has Ocurred. {0}", e.Message);
+            }
+            finally
+            {
+                if (service != null) service.Abort();
+            }
         }
     }
 }

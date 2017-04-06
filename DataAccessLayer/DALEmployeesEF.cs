@@ -39,6 +39,14 @@ namespace DataAccessLayer
             Employee empBD = (from d in context.Employees where d.EmployeeId == emp.EmployeeId select d).Single();
             empBD.Name = emp.Name;
             empBD.StartDate = emp.StartDate;
+            if (emp.GetType() == typeof(FullTimeEmployee))
+            {
+                ((FullTimeEmployee)empBD).Salary = ((FullTimeEmployee)emp).Salary;
+            }
+            else
+            {
+                ((PartTimeEmployee)empBD).HourlyRate = ((PartTimeEmployee)emp).HourlyRate;
+            }
             context.SaveChanges();
         }
 
@@ -50,10 +58,7 @@ namespace DataAccessLayer
 
         public Employee GetEmployee(int id)
         {
-            EmployeeDbContext context = new EmployeeDbContext();
-            Employee empBD = (from d in context.Employees where d.EmployeeId == id select d).Single();
-            context.SaveChanges();
-            return empBD;
+            return new EmployeeDbContext().Employees.Find(id);
         }
     }
 

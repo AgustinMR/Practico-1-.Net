@@ -1,6 +1,6 @@
 ﻿using System;
 using Shared.Entities;
-using DataAccessLayer;
+using BusinessLogicLayer;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -20,15 +20,16 @@ namespace PresentationLayerWinform
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new EmployeeList());
 
-            DALEmployeesEF obj = new DALEmployeesEF();
+            /*BLEmployees obj = new BLEmployees();
             FullTimeEmployee emp = new FullTimeEmployee();
-            emp.EmployeeId = 7;
             emp.Name = "Bruno2";
             emp.StartDate = new DateTime(1967, 1, 9);
             emp.Salary = 5;
             obj.AddEmployee(emp);
             //obj.UpdateEmployee(emp);
             //obj.DeleteEmployee(1);
+            */
+            
         }
     }
 }

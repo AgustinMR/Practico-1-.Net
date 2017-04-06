@@ -38,3 +38,10 @@ C:\GitHub\Practico-1-.Net\Test\bin\Debug\es\Microsoft.VisualStudio.QualityTools.
 C:\GitHub\Practico-1-.Net\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
 C:\GitHub\Practico-1-.Net\Test\obj\Debug\Test.dll
 C:\GitHub\Practico-1-.Net\Test\obj\Debug\Test.pdb
+C:\GitHub\Practico-1-.Net\Test\bin\Debug\MongoDB.Bson.dll
+C:\GitHub\Practico-1-.Net\Test\bin\Debug\MongoDB.Driver.dll
+C:\GitHub\Practico-1-.Net\Test\bin\Debug\MongoDB.Driver.Core.dll
+C:\GitHub\Practico-1-.Net\Test\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\GitHub\Practico-1-.Net\Test\bin\Debug\MongoDB.Bson.xml
+C:\GitHub\Practico-1-.Net\Test\bin\Debug\MongoDB.Driver.xml
+C:\GitHub\Practico-1-.Net\Test\bin\Debug\MongoDB.Driver.Core.xml
