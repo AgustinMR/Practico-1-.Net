@@ -7,7 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.ServiceModel;
+using Service.Employees; // Namespace de la clase generada con la utilizad svcutil.exe
+
 
 namespace PresentationLayerWinform
 {
@@ -20,17 +21,17 @@ namespace PresentationLayerWinform
 
         private void EmployeeList_Load(object sender, EventArgs e)
         {
-            DataTable tabla = new DataTable();
+            DataTable dataTable = new DataTable();
             DataColumn[] columns = { new DataColumn("Employee ID"), new DataColumn("Name"), new DataColumn("Start Date"), new DataColumn("Emp. Type") };
-            tabla.Columns.AddRange(columns);
-            employees.DataSource = tabla;
+            dataTable.Columns.AddRange(columns);
+            employee.DataSource = dataTable;
             string typeEmp;
             foreach (Employee emp in new ServiceEmployeesClient().GetAllEmployees())
             {
-                if (emp.GetType() == typeof(FullTimeEmployee)) typeEmp = "Full Time";
+                if (emp.GetType() == typeof(Shared.Entities.FullTimeEmployee)) typeEmp = "Full Time";
                 else typeEmp = "Part Time";
                 Object[] row = { emp.EmployeeId, emp.Name, emp.StartDate, typeEmp };
-                tabla.Rows.Add(row);
+                dataTable.Rows.Add(row);
             }
         }
     }

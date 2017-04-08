@@ -8,14 +8,18 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Shared.Entities
+[assembly: System.Runtime.Serialization.ContractNamespaceAttribute("Service.Employees", ClrNamespace="Service.Employees")]
+
+namespace Service.Employees
 {
     using System.Runtime.Serialization;
     
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Employee", Namespace="http://schemas.datacontract.org/2004/07/Shared.Entities")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Employee", Namespace="Service.Employees")]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Shared.Entities.FullTimeEmployee))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Shared.Entities.PartTimeEmployee))]
     public partial class Employee : object, System.Runtime.Serialization.IExtensibleDataObject
     {
         
@@ -80,6 +84,56 @@ namespace Shared.Entities
     }
 }
 
+/*namespace Shared.Entities
+{
+    using System.Runtime.Serialization;
+    
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="FullTimeEmployee", Namespace="http://schemas.datacontract.org/2004/07/Shared.Entities")]
+    public partial class FullTimeEmployee : Service.Employees.Employee
+    {
+        
+        private int SalaryField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Salary
+        {
+            get
+            {
+                return this.SalaryField;
+            }
+            set
+            {
+                this.SalaryField = value;
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="PartTimeEmployee", Namespace="http://schemas.datacontract.org/2004/07/Shared.Entities")]
+    public partial class PartTimeEmployee : Service.Employees.Employee
+    {
+        
+        private double HourlyRateField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public double HourlyRate
+        {
+            get
+            {
+                return this.HourlyRateField;
+            }
+            set
+            {
+                this.HourlyRateField = value;
+            }
+        }
+    }
+}*/
+
 
 [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
 [System.ServiceModel.ServiceContractAttribute(Namespace="http://ServiceLayer", ConfigurationName="IServiceEmployees")]
@@ -87,10 +141,10 @@ public interface IServiceEmployees
 {
     
     [System.ServiceModel.OperationContractAttribute(Action="http://ServiceLayer/IServiceEmployees/AddEmployee", ReplyAction="http://ServiceLayer/IServiceEmployees/AddEmployeeResponse")]
-    void AddEmployee(Shared.Entities.Employee emp);
+    void AddEmployee(Service.Employees.Employee emp);
     
     [System.ServiceModel.OperationContractAttribute(Action="http://ServiceLayer/IServiceEmployees/AddEmployee", ReplyAction="http://ServiceLayer/IServiceEmployees/AddEmployeeResponse")]
-    System.Threading.Tasks.Task AddEmployeeAsync(Shared.Entities.Employee emp);
+    System.Threading.Tasks.Task AddEmployeeAsync(Service.Employees.Employee emp);
     
     [System.ServiceModel.OperationContractAttribute(Action="http://ServiceLayer/IServiceEmployees/DeleteEmployee", ReplyAction="http://ServiceLayer/IServiceEmployees/DeleteEmployeeResponse")]
     void DeleteEmployee(int id);
@@ -99,22 +153,22 @@ public interface IServiceEmployees
     System.Threading.Tasks.Task DeleteEmployeeAsync(int id);
     
     [System.ServiceModel.OperationContractAttribute(Action="http://ServiceLayer/IServiceEmployees/UpdateEmployee", ReplyAction="http://ServiceLayer/IServiceEmployees/UpdateEmployeeResponse")]
-    void UpdateEmployee(Shared.Entities.Employee emp);
+    void UpdateEmployee(Service.Employees.Employee emp);
     
     [System.ServiceModel.OperationContractAttribute(Action="http://ServiceLayer/IServiceEmployees/UpdateEmployee", ReplyAction="http://ServiceLayer/IServiceEmployees/UpdateEmployeeResponse")]
-    System.Threading.Tasks.Task UpdateEmployeeAsync(Shared.Entities.Employee emp);
+    System.Threading.Tasks.Task UpdateEmployeeAsync(Service.Employees.Employee emp);
     
     [System.ServiceModel.OperationContractAttribute(Action="http://ServiceLayer/IServiceEmployees/GetAllEmployees", ReplyAction="http://ServiceLayer/IServiceEmployees/GetAllEmployeesResponse")]
-    Shared.Entities.Employee[] GetAllEmployees();
+    Service.Employees.Employee[] GetAllEmployees();
     
     [System.ServiceModel.OperationContractAttribute(Action="http://ServiceLayer/IServiceEmployees/GetAllEmployees", ReplyAction="http://ServiceLayer/IServiceEmployees/GetAllEmployeesResponse")]
-    System.Threading.Tasks.Task<Shared.Entities.Employee[]> GetAllEmployeesAsync();
+    System.Threading.Tasks.Task<Service.Employees.Employee[]> GetAllEmployeesAsync();
     
     [System.ServiceModel.OperationContractAttribute(Action="http://ServiceLayer/IServiceEmployees/GetEmployee", ReplyAction="http://ServiceLayer/IServiceEmployees/GetEmployeeResponse")]
-    Shared.Entities.Employee GetEmployee(int id);
+    Service.Employees.Employee GetEmployee(int id);
     
     [System.ServiceModel.OperationContractAttribute(Action="http://ServiceLayer/IServiceEmployees/GetEmployee", ReplyAction="http://ServiceLayer/IServiceEmployees/GetEmployeeResponse")]
-    System.Threading.Tasks.Task<Shared.Entities.Employee> GetEmployeeAsync(int id);
+    System.Threading.Tasks.Task<Service.Employees.Employee> GetEmployeeAsync(int id);
     
     [System.ServiceModel.OperationContractAttribute(Action="http://ServiceLayer/IServiceEmployees/CalcPartTimeEmployeeSalary", ReplyAction="http://ServiceLayer/IServiceEmployees/CalcPartTimeEmployeeSalaryResponse")]
     double CalcPartTimeEmployeeSalary(int idEmployee, int hours);
@@ -157,12 +211,12 @@ public partial class ServiceEmployeesClient : System.ServiceModel.ClientBase<ISe
     {
     }
     
-    public void AddEmployee(Shared.Entities.Employee emp)
+    public void AddEmployee(Service.Employees.Employee emp)
     {
         base.Channel.AddEmployee(emp);
     }
     
-    public System.Threading.Tasks.Task AddEmployeeAsync(Shared.Entities.Employee emp)
+    public System.Threading.Tasks.Task AddEmployeeAsync(Service.Employees.Employee emp)
     {
         return base.Channel.AddEmployeeAsync(emp);
     }
@@ -177,32 +231,32 @@ public partial class ServiceEmployeesClient : System.ServiceModel.ClientBase<ISe
         return base.Channel.DeleteEmployeeAsync(id);
     }
     
-    public void UpdateEmployee(Shared.Entities.Employee emp)
+    public void UpdateEmployee(Service.Employees.Employee emp)
     {
         base.Channel.UpdateEmployee(emp);
     }
     
-    public System.Threading.Tasks.Task UpdateEmployeeAsync(Shared.Entities.Employee emp)
+    public System.Threading.Tasks.Task UpdateEmployeeAsync(Service.Employees.Employee emp)
     {
         return base.Channel.UpdateEmployeeAsync(emp);
     }
     
-    public Shared.Entities.Employee[] GetAllEmployees()
+    public Service.Employees.Employee[] GetAllEmployees()
     {
         return base.Channel.GetAllEmployees();
     }
     
-    public System.Threading.Tasks.Task<Shared.Entities.Employee[]> GetAllEmployeesAsync()
+    public System.Threading.Tasks.Task<Service.Employees.Employee[]> GetAllEmployeesAsync()
     {
         return base.Channel.GetAllEmployeesAsync();
     }
     
-    public Shared.Entities.Employee GetEmployee(int id)
+    public Service.Employees.Employee GetEmployee(int id)
     {
         return base.Channel.GetEmployee(id);
     }
     
-    public System.Threading.Tasks.Task<Shared.Entities.Employee> GetEmployeeAsync(int id)
+    public System.Threading.Tasks.Task<Service.Employees.Employee> GetEmployeeAsync(int id)
     {
         return base.Channel.GetEmployeeAsync(id);
     }

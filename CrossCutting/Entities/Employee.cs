@@ -1,15 +1,29 @@
-﻿using System;
+﻿using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Shared.Entities {
 
-    public abstract class Employee {
+    [BsonDiscriminator(RootClass = true)]
+    [BsonKnownTypes(typeof(FullTimeEmployee), typeof(PartTimeEmployee))]
+    [KnownType(typeof(FullTimeEmployee))]
+    [KnownType(typeof(PartTimeEmployee))]
+    [DataContract(Name = "Employee", Namespace = "Service.Employees")]
+    public abstract class Employee
+    {
+        [BsonId]
+        public ObjectId Id { get; set; }
+        [DataMember]
         public int EmployeeId { get; set; }
+        [DataMember]
         public string Name { get; set; }
+        [DataMember]
         public DateTime StartDate { get; set; }
-
     }
+
 }

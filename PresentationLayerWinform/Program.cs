@@ -1,6 +1,4 @@
 ﻿using System;
-using Shared.Entities;
-using BusinessLogicLayer;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -20,16 +18,19 @@ namespace PresentationLayerWinform
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new EmployeeList());
 
-            /*BLEmployees obj = new BLEmployees();
-            FullTimeEmployee emp = new FullTimeEmployee();
-            emp.Name = "Bruno2";
-            emp.StartDate = new DateTime(1967, 1, 9);
-            emp.Salary = 5;
-            obj.AddEmployee(emp);
+            ServiceEmployeesClient client = new ServiceEmployeesClient();
+
+            Shared.Entities.PartTimeEmployee emp = new Shared.Entities.PartTimeEmployee();
+            emp.Name = "Pedro3";
+            emp.StartDate = new DateTime(1800, 5, 19);
+            emp.HourlyRate = 43;
+            client.AddEmployee(emp);
+            client.Close();
+
+
             //obj.UpdateEmployee(emp);
             //obj.DeleteEmployee(1);
-            */
-            
+
         }
     }
 }
