@@ -25,7 +25,7 @@ namespace PresentationLayerWinform
             {
                 tipo = "PartTime";
                 if (e.GetType() == typeof(FullTimeEmployee)) tipo = "FullTime";
-                comboBox.Items.Add(e.EmployeeId + " - " + e.Name + " - " + tipo);
+                comboBox.Items.Add(e.EmployeeId + " - " + e.Name + " | " + tipo);
             }
         }
 
@@ -75,6 +75,7 @@ namespace PresentationLayerWinform
                 e.HourlyRate = double.Parse(HourlyRate.Text);
                 new ServiceEmployeesClient().AddEmployee(e);
             }
+            MessageBox.Show("Empleado Agregado Correctamente!");
         }
 
         private void comboBox_SelectedIndexChanged(object sender, EventArgs wtmw)
@@ -83,7 +84,7 @@ namespace PresentationLayerWinform
             salaryUpdate.Visible = false;
             labelHourlyRateUpdate.Visible = false;
             hourlyRateUpdate.Visible = false;
-            Employee e = new ServiceEmployeesClient().GetEmployee(int.Parse(comboBox.SelectedItem.ToString().Substring(0,1)));
+            Employee e = new ServiceEmployeesClient().GetEmployee(int.Parse(comboBox.SelectedItem.ToString().Substring(0, comboBox.SelectedItem.ToString().IndexOf(" - "))));
             if (e != null)
             {
                 nameUpdate.Text = e.Name;
@@ -144,6 +145,7 @@ namespace PresentationLayerWinform
                 e.HourlyRate = double.Parse(hourlyRateUpdate.Text);
                 new ServiceEmployeesClient().UpdateEmployee(e);
             }
+            MessageBox.Show("Empleado Modificado Correctamente!");
         }
     }
 }
