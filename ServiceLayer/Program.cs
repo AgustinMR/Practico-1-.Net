@@ -1,4 +1,5 @@
 ﻿using BusinessLogicLayer;
+using Microsoft.Practices.Unity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,6 +23,11 @@ namespace ServiceLayer
         private static void SetupDependencies()
         {
             blHandler = new BLEmployees(new DataAccessLayer.DALEmployeesMongo());
+            /*using( UnityContainer container = new UnityContainer ())
+            {
+                Helper.RegisterTypes(container);
+                blHandler = container.Resolve<IBLEmployees>();
+            }*/
         }
 
         private static void SetupService()
@@ -37,7 +43,7 @@ namespace ServiceLayer
                 service.Description.Behaviors.Add(smb);
                 service.Open();
                 Console.WriteLine("Employee WFC Service is runing...");
-                Console.WriteLine("Press any key to terminate service.");
+                Console.WriteLine("Press <ENTER> to terminate service.");
                 Console.WriteLine();
                 Console.ReadLine();
             }
