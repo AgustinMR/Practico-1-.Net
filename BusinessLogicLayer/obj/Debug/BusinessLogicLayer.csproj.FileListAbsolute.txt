@@ -12,7 +12,6 @@ C:\Users\Agustin\Documents\PracticoTSI1\BusinessLogicLayer\bin\Debug\Shared.dll.
 C:\Users\Agustin\Documents\PracticoTSI1\BusinessLogicLayer\bin\Debug\EntityFramework.dll
 C:\Users\Agustin\Documents\PracticoTSI1\BusinessLogicLayer\bin\Debug\EntityFramework.xml
 C:\Users\Agustin\Documents\PracticoTSI1\BusinessLogicLayer\bin\Debug\BusinessLogicLayer.dll.config
-C:\GitHub\Practico-1-.Net\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.csprojResolveAssemblyReference.cache
 C:\GitHub\Practico-1-.Net\BusinessLogicLayer\bin\Debug\BusinessLogicLayer.dll.config
 C:\GitHub\Practico-1-.Net\BusinessLogicLayer\bin\Debug\BusinessLogicLayer.dll
 C:\GitHub\Practico-1-.Net\BusinessLogicLayer\bin\Debug\BusinessLogicLayer.pdb
@@ -33,5 +32,6 @@ C:\GitHub\Practico-1-.Net\BusinessLogicLayer\bin\Debug\EntityFramework.xml
 C:\GitHub\Practico-1-.Net\BusinessLogicLayer\bin\Debug\MongoDB.Driver.xml
 C:\GitHub\Practico-1-.Net\BusinessLogicLayer\bin\Debug\EntityFramework.SqlServer.xml
 C:\GitHub\Practico-1-.Net\BusinessLogicLayer\bin\Debug\MongoDB.Driver.Core.xml
+C:\GitHub\Practico-1-.Net\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.csprojResolveAssemblyReference.cache
 C:\GitHub\Practico-1-.Net\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.dll
 C:\GitHub\Practico-1-.Net\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.pdb

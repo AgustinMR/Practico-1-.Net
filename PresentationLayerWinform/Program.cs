@@ -24,7 +24,7 @@ namespace PresentationLayerWinform
             emp.Name = "Pedro3";
             emp.StartDate = new DateTime(1800, 5, 19);
             emp.HourlyRate = 43;
-            client.AddEmployee(emp);
+            //client.AddEmployee(emp);
             client.Close();
 
 
