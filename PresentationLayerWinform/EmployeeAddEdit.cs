@@ -25,7 +25,7 @@ namespace PresentationLayerWinform
             {
                 tipo = "PartTime";
                 if (e.GetType() == typeof(FullTimeEmployee)) tipo = "FullTime";
-                comboBox.Items.Add(e.EmployeeId + " - " + e.Name + " | " + tipo);
+                comboBox.Items.Add(e.EmployeeId + " - " + e.Name + " - " + tipo);
             }
         }
 
@@ -75,7 +75,6 @@ namespace PresentationLayerWinform
                 e.HourlyRate = double.Parse(HourlyRate.Text);
                 new ServiceEmployeesClient().AddEmployee(e);
             }
-            MessageBox.Show("Empleado Agregado Correctamente!");
         }
 
         private void comboBox_SelectedIndexChanged(object sender, EventArgs wtmw)
@@ -84,7 +83,7 @@ namespace PresentationLayerWinform
             salaryUpdate.Visible = false;
             labelHourlyRateUpdate.Visible = false;
             hourlyRateUpdate.Visible = false;
-            Employee e = new ServiceEmployeesClient().GetEmployee(int.Parse(comboBox.SelectedItem.ToString().Substring(0, comboBox.SelectedItem.ToString().IndexOf(" - "))));
+            Employee e = new ServiceEmployeesClient().GetEmployee(int.Parse(comboBox.SelectedItem.ToString().Split('-')[0]));
             if (e != null)
             {
                 nameUpdate.Text = e.Name;
@@ -130,7 +129,7 @@ namespace PresentationLayerWinform
             if (hourlyRateUpdate.Visible == false)
             {
                 FullTimeEmployee e = new FullTimeEmployee();
-                e.EmployeeId = int.Parse(comboBox.SelectedItem.ToString().Substring(0, 1));
+                e.EmployeeId = int.Parse(comboBox.SelectedItem.ToString().Split('-')[0]);
                 e.Name = nameUpdate.Text;
                 e.StartDate = DateTime.Parse(startTimeUpdate.Value.ToString());
                 e.Salary = int.Parse(salaryUpdate.Text);
@@ -139,7 +138,7 @@ namespace PresentationLayerWinform
             else
             {
                 PartTimeEmployee e = new PartTimeEmployee();
-                e.EmployeeId = int.Parse(comboBox.SelectedItem.ToString().Substring(0, 1));
+                e.EmployeeId = int.Parse(comboBox.SelectedItem.ToString().Split('-')[0]);
                 e.Name = nameUpdate.Text;
                 e.StartDate = DateTime.Parse(startTimeUpdate.Value.ToString());
                 e.HourlyRate = double.Parse(hourlyRateUpdate.Text);
